@@ -63,6 +63,8 @@
             type: 'info',
             $deregisterBackButton: angular.noop,
             closeOnStateChange: true,
+            onContentClick: angular.noop,
+            onClose:angular.noop,
             autoClose: null
           }, opts);
 
@@ -99,6 +101,7 @@
 
             scope.$deregisterBackButton();
             stateChangeListenDone();
+            onClose();
           };
 
           scope.show = function() {

@@ -29,7 +29,7 @@
           },
           template:
           '<div class="content-banner-text-wrapper">' +
-            '<div ng-repeat="item in text track by $index" ng-class="{active: $index === currentIndex}" class="content-banner-text" ng-bind="item"></div>' +
+            '<div ng-repeat="item in text track by $index" ng-click="onContentClick()" ng-class="{active: $index === currentIndex}" class="content-banner-text" ng-bind-html="item"></div>' +
           '</div>' +
           '<button class="content-banner-close button button-icon icon {{::icon}}" ng-click="close()"></button>'
         };
