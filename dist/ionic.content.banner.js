@@ -141,7 +141,7 @@ angular.module('jett.ionic.content.banner', ['ionic']);
 
             scope.$deregisterBackButton();
             stateChangeListenDone();
-            onClose();
+            scope.onClose();
           };
 
           scope.show = function() {

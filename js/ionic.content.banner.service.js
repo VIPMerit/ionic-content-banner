@@ -101,7 +101,7 @@
 
             scope.$deregisterBackButton();
             stateChangeListenDone();
-            onClose();
+            scope.onClose();
           };
 
           scope.show = function() {
